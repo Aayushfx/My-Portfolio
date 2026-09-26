@@ -1,0 +1,302 @@
+header {
+    text-align: center;
+    color: white;
+}
+/* From Uiverse.io by adamgiebl */ 
+.container {
+  width: 100%;
+  height: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+
+html,body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    position: relative;
+}
+
+.nav-buton {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-buton:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.nav-buton:active {
+  transform: translateY(-1px);
+}
+
+#index { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+    color: beige;
+}
+
+#intro {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+section h1 { 
+    font-size: 85px;
+    margin: 5px 0;
+}
+
+#bio {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#button {
+    text-align: center;
+    margin-top: -200px;
+}
+
+.boton-elegante {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+#social-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-card {
+    width: fit-content;
+    height: fit-content;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 18px;
+    gap: 15px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 12px;
+}
+
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+.containerTwo:hover {
+    background-color: #333;
+    transition-duration: .3s;
+}
+
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+.containerFour:hover {
+    background-color: #ea4335;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#about,
+#education,
+#interests {
+    max-width: 700px;
+    margin: 50px auto;
+    margin-bottom: 50px;
+    text-align: center;
+    color: beige;
+}
+
+#education h2,
+#interests h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#about p,
+#education p,
+#interests p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+#skills {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: center;
+    color: beige;
+}
+
+#skills p {
+    background-color: #191a1a;
+    border: 1px solid #444;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+#projects {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    color: beige;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project-card {
+    width: 200px;
+    padding: 20px;
+    background-color: #d6c7a1;
+    color: black;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+#contact {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+    color: beige;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact button {
+    padding: 12px;
+    background-color: beige;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
